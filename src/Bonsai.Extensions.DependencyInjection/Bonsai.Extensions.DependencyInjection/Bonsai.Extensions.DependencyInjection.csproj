@@ -5,8 +5,8 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="Bonsai.Ioc" Version="0.0.45" />
-      <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="2.2.0" />
+      <PackageReference Include="Bonsai.Ioc" Version="0.0.51" />
+      <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="2.1.1" />
     </ItemGroup>
 
 </Project>
