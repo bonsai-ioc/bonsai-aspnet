@@ -3,7 +3,7 @@ namespace Bonsai.Extensions.DependencyInjection
     using System;
     using Microsoft.Extensions.DependencyInjection;
 
-    class BonsaiServiceProvider : IServiceProvider, ISupportRequiredService, IDisposable
+    public class BonsaiServiceProvider : IServiceProvider, ISupportRequiredService, IDisposable
     {
         private readonly IScope _scope;
 
@@ -14,11 +14,21 @@ namespace Bonsai.Extensions.DependencyInjection
 
         public object GetService(Type serviceType)
         {
+            if (serviceType is null)
+            {
+                throw new ArgumentNullException(nameof(serviceType));
+            }
+
             return _scope.Resolve(serviceType);
         }
 
         public object GetRequiredService(Type serviceType)
         {
+            if (serviceType is null)
+            {
+                throw new ArgumentNullException(nameof(serviceType));
+            }
+
             return _scope.Resolve(serviceType) ?? throw new NotSupportedException(serviceType.ToString());
         }
 

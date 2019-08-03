@@ -1,24 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
-
+﻿
 namespace TestApp
 {
-    using System.Net.NetworkInformation;
+    using Microsoft.AspNetCore.Builder;
+    using Microsoft.AspNetCore.Hosting;
+    using Microsoft.AspNetCore.Mvc;
+    using Microsoft.Extensions.Configuration;
+    using Microsoft.Extensions.DependencyInjection;
+
     using Bonsai;
-    using Bonsai.LifeStyles;
-    using Microsoft.AspNetCore;
-    using Microsoft.AspNetCore.Mvc.Internal;
-    using Microsoft.AspNetCore.Mvc.ModelBinding.Metadata;
 
     public class Startup
     {
@@ -35,15 +24,7 @@ namespace TestApp
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
         
-        public void ConfigureContainer(ContainerBuilder builder)
-        {
-            //builder.Register<DefaultCompositeMetadataDetailsProvider>()
-            //    .As<ICompositeMetadataDetailsProvider>().Scoped<Singleton>();
-            
-            // builder.RegisterModule();
-
-            //builder.Register<ILogger<WebHost.>>()
-        }
+       
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)

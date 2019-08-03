@@ -14,7 +14,7 @@ namespace TestApp
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
-                .ConfigureServices(services => services.AddBonsai())
+                .ConfigureServices(services => services.UseBonsai())
                 .UseStartup<Startup>();
     }
 }

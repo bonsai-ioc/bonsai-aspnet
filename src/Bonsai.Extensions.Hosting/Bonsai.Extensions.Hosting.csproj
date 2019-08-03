@@ -2,22 +2,22 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <RootNamespace>Bonsai.Extensions.DependencyInjection</RootNamespace>
+    <RootNamespace>Bonsai.Extensions.Hosting</RootNamespace>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
     <LangVersion>latest</LangVersion>
   </PropertyGroup>
 
   <PropertyGroup>
-    <Version>0.0.1</Version>
+    <Version>0.0.2</Version>
   </PropertyGroup>
 
   <PropertyGroup>
-    <PackageId>Bonsai.Ioc.Extensions.DependencyInjection</PackageId>
-    <PackageTitle>Bonsai.Extensions.DependencyInjection</PackageTitle>
+    <PackageId>Bonsai.Ioc.Extensions.Hosting</PackageId>
+    <PackageTitle>Bonsai.Extensions.Hosting</PackageTitle>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
-    <PackageTags>IoC DI Container webapi modular inversion-of-control dependency-injection</PackageTags>
-    <PackageLicenseUrl>http://opensource.org/licenses/Apache-2.0</PackageLicenseUrl>
+    <PackageTags>IoC DI Container dotnet core webapi modular inversion-of-control dependency-injection</PackageTags>
+    <License>http://opensource.org/licenses/Apache-2.0</License>
     <PackageProjectUrl>https://github.com/bonsai-ioc/bonsai-aspnet</PackageProjectUrl>
     <PackageIconUrl>https://raw.githubusercontent.com/dbones/bonsai/master/images/rect151.png</PackageIconUrl>
     <RepositoryUrl>https://github.com/bonsai-ioc/bonsai-aspnet</RepositoryUrl>
@@ -27,8 +27,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Bonsai.Ioc" Version="0.0.51" />
-    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="2.1.1" />
+    <PackageReference Include="Bonsai.Ioc.Extensions.DependencyInjection" Version="0.0.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Hosting.Abstractions" Version="2.1.1" />
   </ItemGroup>
 
 </Project>

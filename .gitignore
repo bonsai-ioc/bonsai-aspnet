@@ -9,3 +9,11 @@ src/Bonsai.Extensions.DependencyInjection/Bonsai.Extensions.DependencyInjection/
 src/Bonsai.Extensions.DependencyInjection/TestApp/bin/
 src/Bonsai.Extensions.DependencyInjection/TestApp/obj/
 src/Bonsai.Extensions.DependencyInjection/TestApp/TestApp.csproj.user
+src/Bonsai.Extensions.DependencyInjection.sln.DotSettings.user
+src/Bonsai.Extensions.DependencyInjection/bin/
+src/Bonsai.Extensions.DependencyInjection/obj/
+src/Bonsai.Extensions.Hosting/bin/
+src/Bonsai.Extensions.Hosting/obj/Bonsai.Extensions.Hosting.csproj.nuget.cache
+src/Bonsai.Extensions.Hosting/obj/
+src/TestApp/bin/
+src/TestApp/obj/
